@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'TareaJuego';
+  public listObb: number[] = [];
+  public listEven: number[] = [];
+
+
+  onChildData(number: number){    
+    if(number % 2 === 0){
+      this.listEven.push(number);
+    }
+    else{
+      this.listObb.push(number);
+    }
+  }
 }
